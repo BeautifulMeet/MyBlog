@@ -1,0 +1,5 @@
+[INFO] [2017-08-07 19:54:30][com.geccocrawler.gecco.downloader.proxy.FileProxys]proxys not load
+[INFO] [2017-08-07 19:54:30][org.reflections.Reflections]Reflections took 124 ms to scan 2 urls, producing 42 keys and 188 values 
+[INFO] [2017-08-07 19:54:31][com.geccocrawler.gecco.GeccoEngine]starts.json not found
+[INFO] [2017-08-07 19:54:31][org.reflections.Reflections]Reflections took 35 ms to scan 1 urls, producing 3 keys and 6 values 
+[INFO] [2017-08-07 19:54:32][com.geccocrawler.gecco.GeccoEngine]close gecco!
