@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jstl/core_rt" prefix="c_rt" %>
 <%
 	String bpath = request.getContextPath();
 	String theme = request.getContextPath()+"/public/";
@@ -9,7 +10,7 @@
     <meta http-equiv="Content-Type" content="text/html; Charset=gb2312">
     <meta http-equiv="Content-Language" content="zh-CN">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <title>不落阁 - 关于本站</title>
+    <title>【BUG】博客 - 关于本站</title>
     <link rel="shortcut icon" href="<%=theme%>images/Logo_40.png" type="image/x-icon">
     <!--Layui-->
     <link href="<%=theme%>plug/layui/css/layui.css" rel="stylesheet" />
@@ -31,8 +32,8 @@
             <a href="javascript:;" class="blog-user layui-hide">
                 <img src="<%=theme%>images/Absolutely.jpg" alt="Absolutely" title="Absolutely" />
             </a>
-            <!-- 不落阁 -->
-            <a class="blog-logo" href="home.html">不落阁</a>
+            <!-- 【BUG】博客 -->
+            <a class="blog-logo" href="home.html">【BUG】博客</a>
             <!-- 导航菜单 -->
             <ul class="layui-nav" lay-filter="nav">
                 <li class="layui-nav-item">
@@ -79,8 +80,8 @@
                                     <img src="<%=theme%>images/Logo_100.png" alt="不落阁" />
                                 </div>
                                 <p class="aboutinfo-nickname">不落阁</p>
-                                <p class="aboutinfo-introduce">一个.NET程序员的个人博客，记录博主学习和成长之路，分享.NET方面技术和源码</p>
-                                <p class="aboutinfo-location"><i class="fa fa-link"></i>&nbsp;&nbsp;<a target="_blank" href="http://www.lyblogs.cn">www.lyblogs.cn</a></p>
+                                <p class="aboutinfo-introduce">一个JAVA程序员的个人博客，记录博主学习和成长之路，分享技术和源码</p>
+                                <p class="aboutinfo-location"><i class="fa fa-link"></i>&nbsp;&nbsp;<a target="_blank" href="http://www.lyblogs.cn">www.bugblog.cn</a></p>
                                 <hr />
                                 <div class="aboutinfo-contact">
                                     <a target="_blank" title="网站首页" href="home.html"><i class="fa fa-home fa-2x" style="font-size:2.5em;position:relative;top:3px"></i></a>
@@ -92,13 +93,9 @@
                                 <fieldset class="layui-elem-field layui-field-title">
                                     <legend>简介</legend>
                                     <div class="layui-field-box aboutinfo-abstract">
-                                        <p style="text-align:center;">不落阁是一个由ASP.NET MVC开发的个人博客网站，诞生于2016年11月7日，起劲为止经历了一次大改，暂且称为不落阁2.0。</p>
-                                        <h1>第一个版本</h1>
-                                        <p>诞生的版本，采用ASP.NET MVC + Entity Framework作为后台框架，前端几乎自己手写，用了Bootstrap的栅格系统来布局！起初并没有注意美工，只打算完成基本的功能，故视觉体验是比较差的。</p>
-                                        <h1>第二个版本</h1>
-                                        <p>由于感觉EF查询数据的时候较慢（后来发现是自己搞错了），于是自己写了个ORM，其实也算不上ORM，就是将ADO.NET进行封装，再封装，再利用反射将数据库表与实体类一一对应，有了基本的增删改查、事务、自动建表等功能，同时为了配合这个ORM，将项目改成三层，前端方面加入了Animate.css的动画效果，同时自己手写了几个动画，并制作了浅色于深色两种主题的样式，视觉体验稍有提高。</p>
-                                        <h1>当前版本</h1>
-                                        <p>从公司的一个后台管理系统的前端发现了Layer弹窗插件，于是追根溯源，发现了Layui前端框架！Layui简洁的风格让我很是喜欢，于是决定再次将网站改版！此次改版从里到外几乎全部更新。后台增加了面向接口开发，使用了IOC框架，同时ORM回归到Entity Framework，前端则移除Bootstarp，引入Layui。视觉体验显著提高。</p>
+                                        <p style="text-align:center;">BUG博客正在建设中................</p>
+                                        <h1></h1>
+                                        <p></p>
                                         <h1 style="text-align:center;">The End</h1>
                                     </div>
                                 </fieldset>
@@ -109,9 +106,9 @@
                                 <div class="aboutinfo-figure">
                                     <img src="<%=theme%>images/Absolutely.jpg" alt="Absolutely" />
                                 </div>
-                                <p class="aboutinfo-nickname">Absolutely</p>
-                                <p class="aboutinfo-introduce">一枚90后程序员，.NET开发工程师，主攻B/S架构，略懂Web前端</p>
-                                <p class="aboutinfo-location"><i class="fa fa-location-arrow"></i>&nbsp;四川 - 成都</p>
+                                <p class="aboutinfo-nickname">简介</p>
+                                <p class="aboutinfo-introduce">17年本科毕业，JAVA-WEB开发工程师，现就职于厦门海中金互联网科技有限公司。</p>
+                                <p class="aboutinfo-location"><i class="fa fa-location-arrow"></i>&nbsp;福建 - 厦门</p>
                                 <hr />
                                 <div class="aboutinfo-contact">
                                     <a target="_blank" title="QQ交流" href="javascript:layer.msg('启动QQ会话窗口')"><i class="fa fa-qq fa-2x"></i></a>
@@ -120,9 +117,9 @@
                                     <a target="_blank" title="码云" href="javascript:layer.msg('转到你的github主页')"><i class="fa fa-git fa-2x"></i></a>
                                 </div>
                                 <fieldset class="layui-elem-field layui-field-title">
-                                    <legend>简介</legend>
+                                    <legend>对自己说些什么</legend>
                                     <div class="layui-field-box aboutinfo-abstract abstract-bloger">
-                                        <p style="text-align:center;">Absolutely，不落阁创始人，诞生于1996年2月14日，目前是一个码农，从事.NET开发。</p>
+                                        <p style="text-align:center;">17年收获很多，无论是在学校，还是在工作中。。。继续加油</p>
                                         <h1>个人信息</h1>
                                         <p>暂无</p>
                                         <h1>个人介绍</h1>
@@ -155,18 +152,18 @@
                                     <legend>Friend Link</legend>
                                     <div class="layui-field-box">
                                         <ul class="friendlink">
-                                            <li>
-                                                <a target="_blank" href="http://www.layui.com/" title="Layui" class="friendlink-item">
-                                                    <p class="friendlink-item-pic"><img src="http://www.layui.com/favicon.ico" alt="Layui" /></p>
-                                                    <p class="friendlink-item-title">Layui</p>
-                                                    <p class="friendlink-item-domain">layui.com</p>
+                                           <li>
+                                                <a target="_blank" href="http://www.ndsy.cn/" title="宁师院" class="friendlink-item">
+                                                    <p class="friendlink-item-pic"><img src="<%=theme %>images/nsy.jpg" alt="页签" /></p>
+                                                    <p class="friendlink-item-title">宁德师范学院</p>
+                                                    <p class="friendlink-item-domain">http://www.ndsy.cn/</p>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a target="_blank" href="http://www.pagemark.cn/" title="页签" class="friendlink-item">
-                                                    <p class="friendlink-item-pic"><img src="http://pm.lyblogs.cn/Images/logo-png.png" alt="页签" /></p>
-                                                    <p class="friendlink-item-title">页签</p>
-                                                    <p class="friendlink-item-domain">pagemark.cn</p>
+                                                <a target="_blank" href="http://www.hzjnet.com/" title="海中金" class="friendlink-item">
+                                                    <p class="friendlink-item-pic"><img src="<%=theme %>images/hzj.jpg" alt="Layui" /></p>
+                                                    <p class="friendlink-item-title">海中金公司官网</p>
+                                                    <p class="friendlink-item-domain">http://www.hzjnet.com/</p>
                                                 </a>
                                             </li>
                                         </ul>
@@ -201,32 +198,43 @@
                                                 </div>
                                             </form>
                                             <ul class="blog-comment">
-                                                <li>
+												<!-- 循环留言 -->                                            	
+                                            	<c_rt:forEach items="${leaveMsgs }" var="msg" varStatus="status">
+												<script>
+													alert("${status.index}");
+												</script>
+												<!-- 第一次  才有 -->
+ 												<li>
+												<c_rt:if test="${status.index==0 }">
                                                     <div class="comment-parent">
                                                         <img src="<%=theme%>images/Logo_40.png" alt="不落阁" />
                                                         <div class="info">
-                                                            <span class="username">不落阁</span>
+                                                            <span class="username">${msg.uname }</span>
                                                         </div>
                                                         <div class="content">
-                                                            我为大家做了模拟留言与回复！试试吧！
+                                                        	    ${msg.mcontent }
                                                         </div>
-                                                        <p class="info info-footer"><span class="time">2017-03-18 18:09</span><a class="btn-reply" href="javascript:;" onclick="btnReplyClick(this)">回复</a></p>
+                                                        <p class="info info-footer"><span class="time">${msg.mCreateTime }</span><a class="btn-reply" href="javascript:;" onclick="btnReplyClick(this)">回复</a></p>
                                                     </div>
                                                     <hr />
+                                                </c_rt:if>
+                                                    <!-- 用户回复 -->
+                                                    <c:if test="${msg.replyId !=null }">
                                                     <div class="comment-child">
                                                         <img src="<%=theme%>images/Absolutely.jpg" alt="Absolutely" />
                                                         <div class="info">
-                                                            <span class="username">Absolutely</span><span>这是用户回复内容</span>
+                                                            <span class="username">${rname }</span><span>${msg.rcontent }</span>
                                                         </div>
-                                                        <p class="info"><span class="time">2017-03-18 18:26</span></p>
+                                                        <p class="info"><span class="time">${msg.rCreateTime }</span></p>
                                                     </div>
-                                                    <div class="comment-child">
+<%--                                                 <div class="comment-child">
                                                         <img src="<%=theme%>images/Absolutely.jpg" alt="Absolutely" />
                                                         <div class="info">
                                                             <span class="username">Absolutely</span><span>这是第二个用户回复内容</span>
                                                         </div>
                                                         <p class="info"><span class="time">2017-03-18 18:26</span></p>
-                                                    </div>
+                                                    </div> --%>
+                                                    </c:if>
                                                     <!-- 回复表单默认隐藏 -->
                                                     <div class="replycontainer layui-hide">
                                                         <form class="layui-form" action="">
@@ -239,6 +247,9 @@
                                                         </form>
                                                     </div>
                                                 </li>
+                                            	</c_rt:forEach>
+                                            	
+                                               
                                             </ul>
                                         </div>
                                     </div>
